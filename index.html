@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Self-driving car - No libraries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="carCanvas" ></canvas>
+    <div id="verticalButtons">
+        <button onclick="save()">🤖💾</button>
+        <button onclick="discard()">🤖🗑️</button>
+        <button onclick="restartSimu()">🤖🔄</button>
+        <button onclick="loupSimu()">🔄🤖🔄</button>
+        <button onclick="onOffPlayer()">🏎️⏯️</button>
+        <button onclick="restartPlayer()">🏎️🔄</button>
+        <!-- <button onclick="saveMap()">🛣️</button>
+        <button onclick="discardMap()">🗑️</button> -->
+    </div>
+    <canvas id="networkCanvas" ></canvas>
+    <script src= "worldParameters.js"></script>
+    <script src= "./cars/carsManager.js"></script>
+    <script src= "./cars/network.js"></script>
+    <script src= "visualizer.js"></script>
+    <script src= "./cars/sensorGyro.js"></script>
+    <script src= "./cars/sensorRayCast.js"></script>
+    <script src= "utils.js"></script>
+    <script src= "./tiles/tileRoadManager.js"></script>
+    <script src= "./tiles/tileRoad.js"></script>
+    <script src= "./tiles/tileTurn.js"></script>
+    <script src= "./tiles/tileFullTurn.js"></script>
+    <script src= "./tiles/tileCross.js"></script>
+    <script src= "./tiles/tileTCross.js"></script>
+    <script src= "./tiles/tileCircle.js"></script>
+    <script src= "./tiles/tileStar.js"></script>
+    <script src= "./cars/controls.js"></script>
+    <script src= "./cars/car.js"></script>
+    <script src= "main.js"></script>
+</body>
+</html>
